@@ -1,0 +1,6 @@
+patient_id,age,gender,bmi,blood_pressure,cholesterol,glucose,smoker,active_days,readmission_risk,length_of_stay,medical_costs,satisfaction_score
+1,45,0,26.2,130,198,105,0,3,0,3,4500,4
+2,62,1,31.5,145,245,130,1,1,2,7,12000,2
+3,38,1,22.8,120,165,95,0,5,0,2,3200,5
+4,55,0,29.1,140,210,115,1,2,1,5,7800,3
+5,29,0,24.5,125,175,88,0,4,0,1,2800,4

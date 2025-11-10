@@ -1,0 +1,6 @@
+patient_id,age,gender,bmi,blood_pressure,cholesterol,glucose,smoker,active_days,readmission_risk,length_of_stay,medical_costs,satisfaction_score
+1,45,Male,26.2,130/85,198,105,No,3,Low,3,4500,4
+2,62,Female,31.5,145/90,245,130,Yes,1,High,7,12000,2
+3,38,Female,22.8,120/80,165,95,No,5,Low,2,3200,5
+4,55,Male,29.1,140/88,210,115,Yes,2,Medium,5,7800,3
+5,29,Male,24.5,125/82,175,88,No,4,Low,1,2800,4
