@@ -1,143 +1,124 @@
-🏥 HealthCare Solutions - Analytics
-Projeto completo de Data Science para melhoria do atendimento ao paciente através da análise de dados preditiva na HealthCare Solutions.
+readme_content = """# 🏥 HealthCare Solutions - Analytics
+**Projeto de Data Science para otimização do atendimento hospitalar com análise preditiva e visualização interativa.**
 
-📋 Sobre o Projeto
-Este projeto visa analisar dados hospitalares para prever custos médicos e identificar fatores de risco, permitindo:
+---
 
-🔮 Previsão de custos médicos com Machine Learning
+## 📋 Sobre o Projeto
 
-📊 Identificação de padrões e correlações nos dados
+O projeto **HealthCare Solutions - Analytics** tem como objetivo aplicar técnicas de **Ciência de Dados e Machine Learning** para **melhorar o atendimento ao paciente** por meio da análise e previsão de custos médicos, identificação de padrões e otimização de recursos hospitalares.
 
-🎯 Otimização de recursos hospitalares
+A iniciativa utiliza dados simulados baseados em contextos hospitalares reais para gerar **insights que apoiam decisões estratégicas** na jornada do paciente.
 
-📈 Melhoria da satisfação do paciente
+### Objetivos Principais
+- 🔮 **Previsão de custos médicos** com modelos de Machine Learning
+- 📊 **Identificação de padrões e correlações** nos dados hospitalares
+- 🎯 **Otimização de recursos** e tempo de permanência hospitalar
+- 📈 **Aumento da satisfação** e da experiência do paciente
+- ⚡ **Tomada de decisão orientada por dados (Data-Driven Decisions)**
 
-⚡ Tomada de decisão baseada em dados
+---
 
-🚀 Tecnologias Utilizadas
-Python 3.8+
+## 🚀 Tecnologias Utilizadas
 
-Pandas, NumPy - Manipulação de dados
+| Categoria | Tecnologias |
+|------------|--------------|
+| **Linguagem** | Python 3.8+ |
+| **Análise e Manipulação de Dados** | Pandas, NumPy |
+| **Machine Learning** | Scikit-learn |
+| **Visualização de Dados** | Matplotlib, Seaborn, Plotly |
+| **Dashboard Interativo** | Streamlit |
+| **Ambiente de Análise** | Jupyter Notebook |
 
-Scikit-learn - Machine Learning
+---
 
-Matplotlib, Seaborn, Plotly - Visualizações
+## 📁 Estrutura do Projeto
 
-Streamlit - Dashboard interativo
-
-Jupyter Notebook - Análise exploratória
-
-📁 Estrutura do Projeto
-text
 HealthCare-Solutions/
 │
 ├── 📊 data/
-│   ├── healthcare_dataset_v2.csv          # Dados originais
-│   ├── healthcare_dataset_expanded.csv    # Dataset expandido
-│   └── healthcare_cleaned.csv             # Dados processados
+│ ├── healthcare_dataset_v2.csv # Dados originais
+│ ├── healthcare_dataset_expanded.csv # Dataset expandido
+│ └── healthcare_cleaned.csv # Dados processados
 │
 ├── 📓 notebooks/
-│   ├── 01_data_cleaning.ipynb            # Limpeza e pré-processamento
-│   ├── 02_eda_analysis.ipynb             # Análise exploratória
-│   └── 03_model_training.ipynb           # Modelagem preditiva
+│ ├── 01_data_cleaning.ipynb # Limpeza e pré-processamento
+│ ├── 02_eda_analysis.ipynb # Análise exploratória
+│ └── 03_model_training.ipynb # Modelagem preditiva
 │
 ├── 🛠️ src/
-│   ├── data_processing.py                # Processamento de dados
-│   ├── model.py                          # Modelo de ML
-│   └── visualization.py                  # Funções de visualização
+│ ├── data_processing.py # Funções de tratamento de dados
+│ ├── model.py # Treinamento e avaliação do modelo ML
+│ └── visualization.py # Funções de visualização
 │
 ├── 📈 dashboard/
-│   └── app.py                            # Dashboard Streamlit
+│ └── app.py # Dashboard Streamlit
 │
 ├── 📤 outputs/
-│   ├── medical_costs_model.pkl           # Modelo treinado
-│   ├── custos_histogram.png              # Gráficos gerados
-│   └── correlacao.png
+│ ├── medical_costs_model.pkl # Modelo treinado (Random Forest)
+│ ├── custos_histogram.png # Gráfico de distribuição de custos
+│ └── correlacao.png # Mapa de correlação
 │
-├── 📄 requirements.txt                   # Dependências
-└── README.md                             # Este arquivo
-🛠️ Como Executar
-1. Instalação das Dependências
-bash
+├── 📄 requirements.txt # Dependências do projeto
+└── README.md # Este arquivo
+
+
+---
+
+## 🛠️ Como Executar
+
+### 1️⃣ Instalar Dependências
+```bash
 pip install -r requirements.txt
-2. Execução Completa do Projeto
-Opção A: Script Automático (Recomendado)
-
-bash
 python execute_all_fixed.py
-Opção B: Execução Manual por Etapas
+```
 
-Gerar dados expandidos:
-
-bash
+### Gerar dados expandidos:
+```
 python data/generate_expanded_data.py
-Executar análise no Jupyter:
-
-bash
+```
+### Rodar notebooks manualmente:
+```
 jupyter notebook
-Execute na ordem: 01 → 02 → 03
+```
 
-Iniciar dashboard:
+Execute na ordem: 01_data_cleaning → 02_eda_analysis → 03_model_training
 
-bash
+### Iniciar o dashboard:
+
+```
 streamlit run dashboard/app.py
-📊 Funcionalidades do Dashboard
-✅ Métricas em Tempo Real - Custos, satisfação, tempo de permanência
+```
 
-✅ Visualizações Interativas - Histogramas, scatter plots, heatmaps
+### 📊 Funcionalidades do Dashboard
 
-✅ Previsão de Custos - Modelo Random Forest em produção
+✅ Métricas em Tempo Real — Custos, satisfação e tempo de permanência
+✅ Visualizações Interativas — Histogramas, scatter plots, heatmaps
+✅ Previsão de Custos Médicos — Modelo Random Forest Regressor em produção
+✅ Análise de Correlação — Identificação dos fatores mais influentes
+✅ Dataset Dinâmico — Suporte a diferentes volumes de dados
 
-✅ Análise de Correlação - Identificação de fatores influentes
+### 🤖 Modelo de Machine Learning
 
-✅ Dados Expansíveis - Suporte a múltiplos tamanhos de dataset
+- Algoritmo: Random Forest Regressor
+- Variável Alvo: medical_costs (Custos médicos)
+- Principais Features: idade, IMC (BMI), tempo de internação, pressão arterial
 
-🤖 Modelo de Machine Learning
-Algoritmo: Random Forest Regressor
-Variável Alvo: medical_costs (Custos médicos)
-Features Principais: idade, BMI, tempo de permanência, pressão arterial
+#### Performance Esperada:
 
-Performance Esperada:
+📏 MAE (Erro Absoluto Médio): R$ 800–1.200
 
-📏 MAE (Mean Absolute Error): R$ 800-1.200
+📈 R² Score: 0.75–0.85
 
-📈 R² Score: 0.75-0.85
-
-🎯 Acurácia: 80-85%
+🎯 Acurácia média: 80–85%
 
 🎯 Insights Principais
-Idade é o fator mais influente nos custos médicos
 
-Pacientes fumantes têm custos 40% maiores em média
+ - Idade é o fator mais influente nos custos médicos
 
-Satisfação correlaciona inversamente com tempo de permanência
+ - Pacientes fumantes apresentam custos 40% maiores em média
 
-BMI > 30 aumenta risco de readmissão em 3x
+- Satisfação tem relação inversa com o tempo de permanência
 
-🔒 Aspectos Éticos e LGPD
-✅ Dados anonimizados e sintéticos
+- Pacientes com BMI > 30 têm 3x mais risco de readmissão
 
-✅ Conformidade com Lei Geral de Proteção de Dados
 
-✅ Consentimento simulado para uso de dados
-
-✅ Segurança e privacidade garantidas
-
-👨‍💻 Desenvolvimento
-Para contribuir com o projeto:
-Clone o repositório
-
-Crie um ambiente virtual:
-
-bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-Instale as dependências:
-
-bash
-pip install -r requirements.txt
-Execute os testes:
-
-bash
-python -m pytest tests/
