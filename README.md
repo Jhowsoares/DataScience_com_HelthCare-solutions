@@ -1,4 +1,4 @@
-readme_content = """# 🏥 HealthCare Solutions - Analytics
+# 🏥 HealthCare Solutions - Analytics
 **Projeto de Data Science para otimização do atendimento hospitalar com análise preditiva e visualização interativa.**
 
 ---
