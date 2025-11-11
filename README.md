@@ -36,30 +36,30 @@ A iniciativa utiliza dados simulados baseados em contextos hospitalares reais pa
 HealthCare-Solutions/
 │
 ├── 📊 data/
-│ ├── healthcare_dataset_v2.csv # Dados originais
-│ ├── healthcare_dataset_expanded.csv # Dataset expandido
-│ └── healthcare_cleaned.csv # Dados processados
+│   ├── healthcare_dataset_v2.csv          # Dados originais
+│   ├── healthcare_dataset_expanded.csv    # Dataset expandido
+│   └── healthcare_cleaned.csv             # Dados processados
 │
 ├── 📓 notebooks/
-│ ├── 01_data_cleaning.ipynb # Limpeza e pré-processamento
-│ ├── 02_eda_analysis.ipynb # Análise exploratória
-│ └── 03_model_training.ipynb # Modelagem preditiva
+│   ├── 01_data_cleaning.ipynb            # Limpeza e pré-processamento
+│   ├── 02_eda_analysis.ipynb             # Análise exploratória
+│   └── 03_model_training.ipynb           # Modelagem preditiva
 │
 ├── 🛠️ src/
-│ ├── data_processing.py # Funções de tratamento de dados
-│ ├── model.py # Treinamento e avaliação do modelo ML
-│ └── visualization.py # Funções de visualização
+│   ├── data_processing.py                # Funções de tratamento de dados
+│   ├── model.py                          # Treinamento do modelo ML
+│   └── visualization.py                  # Funções de visualização
 │
 ├── 📈 dashboard/
-│ └── app.py # Dashboard Streamlit
+│   └── app.py                            # Dashboard Streamlit
 │
 ├── 📤 outputs/
-│ ├── medical_costs_model.pkl # Modelo treinado (Random Forest)
-│ ├── custos_histogram.png # Gráfico de distribuição de custos
-│ └── correlacao.png # Mapa de correlação
+│   ├── medical_costs_model.pkl           # Modelo treinado
+│   ├── custos_histogram.png              # Gráficos gerados
+│   └── correlacao.png
 │
-├── 📄 requirements.txt # Dependências do projeto
-└── README.md # Este arquivo
+├── 📄 requirements.txt                   # Dependências
+└── README.md                             # Documentação
 
 
 ---
@@ -88,20 +88,24 @@ Execute na ordem: 01_data_cleaning → 02_eda_analysis → 03_model_training
 ```
 streamlit run dashboard/app.py
 ```
-
+---
 ### 📊 Funcionalidades do Dashboard
 
-✅ Métricas em Tempo Real — Custos, satisfação e tempo de permanência
-✅ Visualizações Interativas — Histogramas, scatter plots, heatmaps
-✅ Previsão de Custos Médicos — Modelo Random Forest Regressor em produção
-✅ Análise de Correlação — Identificação dos fatores mais influentes
-✅ Dataset Dinâmico — Suporte a diferentes volumes de dados
+- ✅ Métricas em Tempo Real — Custos, satisfação e tempo de permanência
+- ✅ Visualizações Interativas — Histogramas, scatter plots, heatmaps
+- ✅ Previsão de Custos Médicos — Modelo Random Forest Regressor em produção
+- ✅ Análise de Correlação — Identificação dos fatores mais influentes
+- ✅ Dataset Dinâmico — Suporte a diferentes volumes de dados
+
+---
 
 ### 🤖 Modelo de Machine Learning
 
 - Algoritmo: Random Forest Regressor
 - Variável Alvo: medical_costs (Custos médicos)
 - Principais Features: idade, IMC (BMI), tempo de internação, pressão arterial
+
+---
 
 #### Performance Esperada:
 
@@ -110,6 +114,8 @@ streamlit run dashboard/app.py
 📈 R² Score: 0.75–0.85
 
 🎯 Acurácia média: 80–85%
+
+---
 
 🎯 Insights Principais
 
