@@ -33,6 +33,7 @@ A iniciativa utiliza dados simulados baseados em contextos hospitalares reais pa
 
 ## 📁 Estrutura do Projeto
 
+```
 HealthCare-Solutions/
 │
 ├── 📊 data/
@@ -60,7 +61,7 @@ HealthCare-Solutions/
 │
 ├── 📄 requirements.txt                   # Dependências
 └── README.md                             # Documentação
-
+```
 
 ---
 
